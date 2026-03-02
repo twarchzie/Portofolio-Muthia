@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fdf8f3;
+    color: #4e4039;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #fff6ef;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6d5c53;
+    font-weight: 500;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: #f7ebe1;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #d8b4a0;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #8a6f63;
+}
+
+.section {
+    padding: 80px 15%;
+    text-align: center;
+}
+
+.section ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.section li {
+    margin: 8px 0;
+}
+
+.playlist {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.song-card {
+    background: #fff6ef;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.song-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.song-card h4 {
+    margin-bottom: 5px;
+}
+
+.song-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #8a6f63;
+}
+
+.song-card a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 14px;
+    background: #c89f8a;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.song-card a:hover {
+    background: #b07d63;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff6ef;
+}
+
+/* Scroll Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
